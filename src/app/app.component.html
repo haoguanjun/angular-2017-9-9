@@ -1,3 +1,7 @@
-<h1>
-  {{title}}
-</h1>
+<p-menubar [model]="items">
+  <input type="text" pInputText placeholder="Search">
+  <button pButton label="Logout" icon="fa-sign-out"></button>
+</p-menubar>
+<p-panel header="Radar" [toggleable]="true" [style]="{'margin-bottom':'20px'}">
+  <p-chart type="radar" [data]="data" [width]="300"></p-chart>
+</p-panel>
